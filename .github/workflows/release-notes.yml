@@ -1,0 +1,18 @@
+name: Generate Release Notes
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  release-notes:
+    name: release-notes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: stable
+      - name: Generate Release Notes
+        run: |
+          go install github.com/garethjevans/release-notes@main
+          release-notes
+        #env:
+        #  GITHUB_TOKEN: ${{ secrets.RELEASE_NOTES_TOKEN }}
