@@ -14,5 +14,5 @@ jobs:
         run: |
           go install github.com/garethjevans/release-notes@main
           release-notes
-        env:
-          GITHUB_TOKEN: ${{ secrets.RELEASE_NOTES_TOKEN }}
+        #env:
+        #  GITHUB_TOKEN: ${{ secrets.RELEASE_NOTES_TOKEN }}
