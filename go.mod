@@ -5,13 +5,14 @@ go 1.22.3
 toolchain go1.22.5
 
 require (
-	github.com/jenkins-x/go-scm v1.14.41
+	github.com/jenkins-x/go-scm v1.14.45
 	gopkg.in/yaml.v2 v2.4.0
 )
 
 require (
 	code.gitea.io/sdk/gitea v0.14.0 // indirect
-	github.com/bluekeyes/go-gitdiff v0.7.4 // indirect
+	fortio.org/safecast v1.0.0 // indirect
+	github.com/bluekeyes/go-gitdiff v0.8.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/hashicorp/go-version v1.3.0 // indirect
 	github.com/mitchellh/copystructure v1.2.0 // indirect
